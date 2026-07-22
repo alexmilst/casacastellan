@@ -23,11 +23,11 @@ const IMAGES = {
   reclaimed: "https://i.postimg.cc/652K7dLD/Chat-GPT-Image-Jul-21-2026-07-06-15-PM.png",
   art: "https://i.postimg.cc/MGrdNrvB/b289352910bab12739ff5077fedc21b8.webp",
   estate: "https://i.postimg.cc/prwPVZr0/historic-interior-upscaled-4x.png",
-  mapSpain: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4MDAiIGhlaWdodD0iNjUwIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjY1MCIgZmlsbD0iI0UzRDlDMiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIyNiIgZmlsbD0iIzIxMUQxNyIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSI+U3BhaW4gbWFwPC90ZXh0Pjwvc3ZnPg==",
-  mapPortugal: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4MDAiIGhlaWdodD0iNjUwIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjY1MCIgZmlsbD0iI0UzRDlDMiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIyNiIgZmlsbD0iIzIxMUQxNyIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSI+UG9ydHVnYWwgbWFwPC90ZXh0Pjwvc3ZnPg==",
-  mapFrance: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4MDAiIGhlaWdodD0iNjUwIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjY1MCIgZmlsbD0iI0UzRDlDMiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIyNiIgZmlsbD0iIzIxMUQxNyIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSI+RnJhbmNlIG1hcDwvdGV4dD48L3N2Zz4=",
-  mapItaly: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4MDAiIGhlaWdodD0iNjUwIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjY1MCIgZmlsbD0iI0UzRDlDMiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIyNiIgZmlsbD0iIzIxMUQxNyIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSI+SXRhbHkgbWFwPC90ZXh0Pjwvc3ZnPg==",
-  mapGreece: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4MDAiIGhlaWdodD0iNjUwIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjY1MCIgZmlsbD0iI0UzRDlDMiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIyNiIgZmlsbD0iIzIxMUQxNyIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSI+R3JlZWNlIG1hcDwvdGV4dD48L3N2Zz4=",
+  mapSpain: "https://i.postimg.cc/8zXx8VPk/Chat-GPT-Image-Jul-22-2026-01-13-55-AM.png",
+  mapPortugal: "https://i.postimg.cc/9X1pgYf3/Chat-GPT-Image-Jul-22-2026-01-05-54-AM.png",
+  mapFrance: "https://i.postimg.cc/vHcWqRjQ/exec-1d755c84-c764-46c2-b157-624e4f3dd0aa.png",
+  mapItaly: "https://i.postimg.cc/rp8sHxs6/Chat-GPT-Image-Jul-22-2026-01-01-07-AM.png",
+  mapGreece: "https://i.postimg.cc/sgz5VBxQ/exec-64eca38a-3b84-4f6b-bcb4-afa5295f9049.png",
 };
 
 const MATERIALS_PLACEHOLDER =
@@ -53,14 +53,14 @@ const collection = [
     name: "Fine Art",
     img: IMAGES.art,
     body:
-      "Original paintings and sculpture by living European artists, represented exclusively in the United States. Placed directly with designers and private collectors, with commissioned portraiture available on request.",
+      "Original paintings and sculpture by living European artists, represented exclusively in the United States for architects, designers and private collectors. We place work directly from the artist's studio, and can arrange commissioned portraiture, a custom-scale piece built for a specific wall, or a curated selection assembled around an existing collection.",
   },
   {
     n: "04",
     name: "Estate Pieces",
     img: IMAGES.estate,
     body:
-      "Individually selected antiques and objects drawn from European estates and provincial auctions. Brokered to order with honest dating and documented provenance — no reproduction work represented as period.",
+      "Individually selected antiques and objects drawn from European estates and provincial auctions — furniture, lighting, mirrors, and decorative pieces with genuine age and history. Each piece is brokered to order with honest dating, clear provenance, and no reproduction work represented as period.",
   },
 ];
 
@@ -69,25 +69,25 @@ const process = [
     t: "Send a specification",
     d:
       "Share a material specification, a set of architectural drawings, or simply a description of what the project calls for — a fireplace surround, a run of reclaimed floor, an entry gate. We work directly from your documents: dimensions, finishes, quantities, timeline. If formal drawings aren't ready yet, photographs and reference material are enough to start a conversation. Every request lands with someone who has stood in the workshop or the reclamation yard it will be sourced from, not a call-center intermediary.",
-    img: IMAGES.commissions,
+    img: "https://i.postimg.cc/1RDRqF6h/Chat-GPT-Image-Jul-22-2026-03-10-50-AM.png",
   },
   {
     t: "Receive pricing",
     d:
       "Pricing is quoted directly from the source — the workshop bench, the quarry, the reclamation house — with freight, insurance and duty already built into the number you're given. There is no importer or showroom markup sitting between you and the maker. Depending on the material and quantity, pricing typically lands 25–40% below the equivalent piece sourced through a US showroom, and we're glad to walk through exactly how a figure was built.",
-    img: IMAGES.estate,
+    img: "https://i.postimg.cc/yYvHmy8y/architect-at-desk-upscaled-4x.png",
   },
   {
     t: "Review samples",
     d:
       "Before any commitment is made, physical samples ship to your office or the job site — a cut of stone, a length of iron, a glazed tile, a timber finish. You handle the actual material under your own light and against your own boards, rather than approving a spec from a photograph on a screen. Only once a sample is signed off does procurement or production begin in earnest, so there are no surprises when the crate arrives.",
-    img: IMAGES.reclaimed,
+    img: "https://i.postimg.cc/sfm8qDCy/Chat-GPT-Image-Jul-22-2026-04-37-18-AM.png",
   },
   {
     t: "Delivery",
     d:
       "Finished work is crated at origin by the hands that made it, insured for its full value in transit, and tracked door to door. On tile and flooring orders, we ship 10–15% extra material at no charge to cover cuts and breakage, so your install never stalls waiting on a reorder. Delivery windows are coordinated around your construction schedule rather than a generic freight timetable, and a member of our team stays reachable throughout the shipment — from the workshop floor in Andalucía to the loading dock on site.",
-    img: IMAGES.art,
+    img: "https://i.postimg.cc/ZYL8LWt6/45bbf842d4be02cc5eca2b4a6401d720.jpg",
   },
 ];
 
@@ -186,6 +186,8 @@ export default function CasaCastellanV2() {
         .cc-countries { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
         @media (max-width: 900px) { .cc-countries { grid-template-columns: repeat(2, 1fr); } }
         @media (max-width: 560px) { .cc-countries { grid-template-columns: 1fr; } }
+        .cc-materials { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px 40px; text-align: center; }
+        @media (max-width: 640px) { .cc-materials { grid-template-columns: 1fr; } }
         .cc-process { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); gap: clamp(28px,3vw,40px); }
         .cc-step-row { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(32px,5vw,64px); align-items: center; }
         .cc-step-row.reverse .cc-step-text { order: 2; }
@@ -214,16 +216,24 @@ export default function CasaCastellanV2() {
           borderBottom: `1px solid ${C.line}`,
         }}
       >
-        <div>
+        <div style={{ textAlign: "center" }}>
           <div style={{ ...display, fontSize: 19, lineHeight: 1 }}>Casa Castellan</div>
-          <div style={{ ...label, fontSize: 9.5, marginTop: 4 }}>Antiques &amp; Architectural Trade</div>
+          <div style={{ ...label, fontSize: 9.5, letterSpacing: ".06em", marginTop: 4, whiteSpace: "nowrap" }}>Mediterranean Art &amp; Heritage</div>
         </div>
         <div style={{ display: "flex", gap: "clamp(18px,3vw,40px)" }} className="cc-nav-links">
           {["About", "Collection", "Sourcing", "Process"].map((item) => (
             <a
               key={item}
               href={`#${item.toLowerCase()}`}
-              style={{ ...label, fontSize: 12.5, textDecoration: "none" }}
+              style={{
+                fontFamily: "'Quattrocento', serif",
+                fontWeight: 700,
+                textTransform: "uppercase",
+                letterSpacing: ".08em",
+                color: C.ink,
+                fontSize: 12.5,
+                textDecoration: "none",
+              }}
             >
               {item}
             </a>
@@ -240,7 +250,7 @@ export default function CasaCastellanV2() {
             letterSpacing: ".1em",
             background: C.ink,
             borderColor: C.ink,
-            color: C.terra,
+            color: C.limestone,
           }}
         >
           Contact Us
@@ -249,7 +259,7 @@ export default function CasaCastellanV2() {
 
 
       {/* ── HERO ─────────────────────── */}
-      <header style={{ background: C.logoBg, borderBottom: `1px solid ${C.line}` }}>
+      <header style={{ background: C.cream, borderBottom: `1px solid ${C.line}` }}>
         <div
           className="cc-grid"
           style={{ maxWidth: 1240, margin: "0 auto", padding: "clamp(56px,8vw,112px) clamp(24px,5vw,80px) clamp(48px,7vw,96px)" }}
@@ -282,7 +292,7 @@ export default function CasaCastellanV2() {
 
             <div aria-hidden="true" style={{ width: 64, height: 2, background: C.terra, margin: "30px 0" }} />
 
-            <p style={{ fontFamily: "'Lora', serif", fontSize: "clamp(17px,1.6vw,19px)", lineHeight: 1.78, color: C.soft, maxWidth: 520, margin: 0 }}>
+            <p style={{ fontFamily: "'Lora', serif", fontSize: "clamp(17px,1.6vw,19px)", lineHeight: 1.78, color: C.soft, maxWidth: 520, margin: 0, textAlign: "justify" }}>
               Casa Castellan works with reclamation houses, workshops and artists across Spain, Italy, France,
               Portugal and Greece &amp; Cyclades, supplying architects, builders and interior designers throughout the United
               States.
@@ -305,7 +315,7 @@ export default function CasaCastellanV2() {
         {/* full-width sourcing / serving band */}
         <div style={{ background: C.ink }}>
           <div style={{ maxWidth: 1240, margin: "0 auto", padding: "clamp(40px,6vw,60px) clamp(24px,5vw,80px)", textAlign: "center" }}>
-            <p style={{ ...label, fontSize: 11, letterSpacing: ".25em", color: "rgba(245,241,231,.45)", margin: "0 0 16px" }}>
+            <p style={{ ...label, fontSize: 11, letterSpacing: ".25em", color: C.limestone, margin: "0 0 16px" }}>
               Sourcing
             </p>
             <p
@@ -327,7 +337,7 @@ export default function CasaCastellanV2() {
                 fontStyle: "italic",
                 fontWeight: 500,
                 fontSize: 19,
-                color: "rgba(245,241,231,.45)",
+                color: C.limestone,
                 margin: "10px 0 0",
               }}
             >
@@ -340,7 +350,7 @@ export default function CasaCastellanV2() {
               <span style={{ width: 44, height: 1, background: "rgba(245,241,231,.18)" }} />
             </div>
 
-            <p style={{ ...label, fontSize: 11, letterSpacing: ".25em", color: "rgba(245,241,231,.45)", margin: "0 0 16px" }}>
+            <p style={{ ...label, fontSize: 11, letterSpacing: ".25em", color: C.limestone, margin: "0 0 16px" }}>
               Serving
             </p>
             <p
@@ -362,7 +372,7 @@ export default function CasaCastellanV2() {
                 fontStyle: "italic",
                 fontWeight: 500,
                 fontSize: 19,
-                color: "rgba(245,241,231,.45)",
+                color: C.limestone,
                 margin: "10px 0 0",
               }}
             >
@@ -373,18 +383,25 @@ export default function CasaCastellanV2() {
       </header>
 
       {/* ── ABOUT ─────────────────────── */}
-      <section id="about" style={{ borderTop: `1px solid ${C.line}`, padding: "clamp(56px,8vw,96px) clamp(20px,4vw,56px)" }}>
+      <section id="about" style={{ background: C.limestone, borderTop: `1px solid ${C.line}`, padding: "clamp(56px,8vw,96px) clamp(20px,4vw,56px)" }}>
         <h2 style={{ ...display, fontSize: "clamp(24px,3vw,32px)", margin: "0 0 clamp(32px,5vw,52px)" }}>About</h2>
         <div className="cc-about">
           <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", gap: 22 }}>
-            <p style={{ fontFamily: "'Lora', serif", margin: 0, fontSize: 16, lineHeight: 1.75, color: C.ink }}>
+            <p style={{ fontFamily: "'Lora', serif", margin: 0, fontSize: 16, lineHeight: 1.75, color: C.ink, textAlign: "justify" }}>
               Casa Castellan connects reclamation houses, family workshops and living artists across Spain,
               Portugal, France, Italy and Greece &amp; Cyclades with architects, builders and designers across the United
               States.
             </p>
-            <p style={{ fontFamily: "'Lora', serif", margin: 0, fontSize: 16, lineHeight: 1.75, color: C.soft }}>
+            <p style={{ fontFamily: "'Lora', serif", margin: 0, fontSize: 16, lineHeight: 1.75, color: C.soft, textAlign: "justify" }}>
               Every lot is verified in person at the source before purchase. Commissioned work is produced
               under our supervision at the workshop.
+            </p>
+            <p style={{ fontFamily: "'Lora', serif", margin: 0, fontSize: 16, lineHeight: 1.75, color: C.soft, textAlign: "justify" }}>
+              We hold no warehouse and carry no inventory. Every commission begins with a direct conversation
+              at the source — a workshop foreman, a stone yard owner, a working artist — so pricing and lead
+              times reflect what is genuinely available today, not a catalog photographed years ago. That
+              relationship is also what keeps our commission honest and turnaround measured in weeks rather
+              than a full shipping season.
             </p>
           </div>
 
@@ -417,10 +434,7 @@ export default function CasaCastellanV2() {
               </div>
               <p style={{ ...label, fontSize: 12, color: C.terra, margin: "0 0 6px" }}>{c.n} /</p>
               <h3 style={{ ...display, fontSize: 18, margin: "0 0 10px" }}>{c.name}</h3>
-              <p style={{ margin: "0 0 18px", fontSize: 14, lineHeight: 1.7, color: C.soft }}>{c.body}</p>
-              <a href="#contact" className="cc-btn">
-                Explore
-              </a>
+              <p style={{ margin: 0, fontSize: 14, lineHeight: 1.7, color: C.soft, textAlign: "justify" }}>{c.body}</p>
             </div>
           ))}
         </div>
@@ -428,7 +442,44 @@ export default function CasaCastellanV2() {
 
       {/* ── SOURCING REGISTER ─────────────────────── */}
       <section id="sourcing" style={{ background: "#F2EBD9", borderTop: `1px solid ${C.line}`, borderBottom: `1px solid ${C.line}`, padding: "clamp(56px,8vw,96px) clamp(20px,4vw,56px)" }}>
-        <h2 style={{ ...display, fontSize: "clamp(24px,3vw,32px)", margin: "0 0 clamp(32px,5vw,52px)" }}>The Sourcing Register</h2>
+        <h2 style={{ ...display, fontSize: "clamp(24px,3vw,32px)", margin: "0 0 clamp(32px,5vw,52px)" }}>The Sourcing Geography</h2>
+
+        <div style={{ background: C.ink, padding: "clamp(32px,5vw,48px) clamp(28px,5vw,52px)", marginBottom: "clamp(40px,6vw,64px)", textAlign: "center" }}>
+          <p style={{ ...label, fontSize: 11, letterSpacing: ".25em", color: C.limestone, margin: "0 0 22px" }}>
+            Materials Index
+          </p>
+          <div className="cc-materials" style={{ maxWidth: 760, margin: "0 auto" }}>
+            {[
+              { m: "Limestone", r: "Provence · Languedoc · Tuscany · Veneto · Puglia" },
+              { m: "Marble", r: "Carrara · Estremoz–Borba · Attica · Macedonia · Tinos" },
+              { m: "Terracotta & Glazed Tile", r: "Andalusia · Valencia · Campania · Sicily · Lisbon & Porto" },
+              { m: "Travertine", r: "Lazio" },
+              { m: "Wrought Iron", r: "Andalusia · Castile" },
+              { m: "Oak Beams", r: "Burgundy" },
+              { m: "Pottery & Ceramics", r: "Sifnos" },
+            ].map((item) => (
+              <div key={item.m}>
+                <p
+                  style={{
+                    fontFamily: "'Quattrocento', serif",
+                    fontWeight: 700,
+                    textTransform: "uppercase",
+                    letterSpacing: ".06em",
+                    fontSize: 14.5,
+                    color: C.terra,
+                    margin: "0 0 4px",
+                  }}
+                >
+                  {item.m}
+                </p>
+                <p style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic", fontSize: 14.5, color: C.limestone, margin: 0 }}>
+                  {item.r}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+
         <img
           src={MAP_FULL}
           alt="Casa Castellan European sourcing map — Spain, Portugal, France, Italy and Greece &amp; Cyclades"
@@ -465,7 +516,7 @@ export default function CasaCastellanV2() {
                       <span style={{ fontSize: 13.5, fontWeight: 500 }}>{r.name}</span>
                       <span style={{ ...label, fontSize: 10, color: C.terra }}>{r.cities}</span>
                     </div>
-                    <p style={{ margin: "5px 0 0", fontSize: 13, lineHeight: 1.55, color: C.soft }}>{r.mats}</p>
+                    <p style={{ margin: "5px 0 0", fontSize: 13, lineHeight: 1.55, color: C.soft, textAlign: "justify" }}>{r.mats}</p>
                   </div>
                 ))}
               </div>
@@ -473,10 +524,10 @@ export default function CasaCastellanV2() {
           ))}
 
           <div style={{ background: C.ink, display: "flex", flexDirection: "column", justifyContent: "center", padding: "28px 26px" }}>
-            <p style={{ ...label, fontSize: 11, letterSpacing: ".2em", color: C.terra, margin: "0 0 14px" }}>
+            <p style={{ ...label, fontWeight: 700, fontSize: 11, letterSpacing: ".2em", color: C.terra, margin: "0 0 14px" }}>
               Door to Door
             </p>
-            <p style={{ fontFamily: "'Lora', serif", fontSize: 15, lineHeight: 1.7, color: "rgba(245,241,231,.85)", margin: 0 }}>
+            <p style={{ fontFamily: "'Lora', serif", fontSize: 15, lineHeight: 1.7, color: C.limestone, margin: 0, textAlign: "justify" }}>
               Every lot is verified in person at the source — from reclamation yards in Andalucía to marble ateliers on
               Tinos — then shipped DDP, duty paid and insured, to job sites in Laguna Beach, Montecito, Palm Beach and
               Coral Gables.
@@ -493,9 +544,9 @@ export default function CasaCastellanV2() {
           {process.map((step, i) => (
             <div key={step.t} className={`cc-step-row${i % 2 === 1 ? " reverse" : ""}`}>
               <div className="cc-step-text">
-                <p style={{ ...label, fontSize: 11, color: "rgba(245,241,231,.45)", margin: "0 0 14px" }}>{String(i + 1).padStart(2, "0")} /</p>
+                <p style={{ ...label, fontSize: 11, color: C.limestone, margin: "0 0 14px" }}>{String(i + 1).padStart(2, "0")} /</p>
                 <h3 style={{ ...display, color: C.terra, fontSize: "clamp(20px,2.2vw,26px)", margin: "0 0 16px" }}>{step.t}</h3>
-                <p style={{ fontFamily: "'Lora', serif", margin: 0, fontSize: 15.5, lineHeight: 1.8, color: "rgba(245,241,231,.72)", maxWidth: 480 }}>
+                <p style={{ fontFamily: "'Lora', serif", margin: 0, fontSize: 15.5, lineHeight: 1.8, color: C.limestone, maxWidth: 480, textAlign: "justify" }}>
                   {step.d}
                 </p>
               </div>
@@ -510,21 +561,26 @@ export default function CasaCastellanV2() {
           ))}
         </div>
 
-        <p
-          style={{
-            margin: "clamp(48px,7vw,80px) 0 0",
-            fontFamily: "'Cormorant Garamond', serif",
-            fontStyle: "italic",
-            fontWeight: 500,
-            fontSize: "clamp(24px,2.8vw,30px)",
-            lineHeight: 1.5,
-            maxWidth: 720,
-            color: C.terra,
-          }}
-        >
-          Every lot is verified in person at the source before purchase. Pricing is typically 25–40% below US
-          showroom equivalents, with freight and duty included.
-        </p>
+        <div style={{ marginTop: "clamp(56px,8vw,96px)", textAlign: "center" }}>
+          <div style={{ width: 56, height: 1, background: C.terra, margin: "0 auto 30px" }} />
+          <p
+            style={{
+              margin: "0 auto",
+              fontFamily: "'Cormorant Garamond', serif",
+              fontStyle: "italic",
+              fontWeight: 500,
+              fontSize: "clamp(22px,2.6vw,28px)",
+              lineHeight: 1.65,
+              maxWidth: 680,
+              color: C.limestone,
+              letterSpacing: ".01em",
+            }}
+          >
+            Every lot is verified in person at the source before purchase — pricing typically lands 25–40% below
+            US showroom equivalents, with freight and duty already included.
+          </p>
+          <div style={{ width: 56, height: 1, background: C.terra, margin: "30px auto 0" }} />
+        </div>
       </section>
 
       {/* ── CONTACT ─────────────────────── */}
@@ -532,13 +588,13 @@ export default function CasaCastellanV2() {
         <h2 style={{ ...display, color: C.terra, fontSize: "clamp(26px,3.4vw,36px)", lineHeight: 1.4, maxWidth: 620, margin: "0 0 20px" }}>
           Pricing a specification, or looking for something specific?
         </h2>
-        <p style={{ fontSize: 15.5, lineHeight: 1.7, color: "rgba(245,241,231,0.72)", maxWidth: 480, margin: "0 0 32px" }}>
+        <p style={{ fontSize: 15.5, lineHeight: 1.7, color: C.limestone, maxWidth: 480, margin: "0 0 32px", textAlign: "justify" }}>
           Send the spec or the drawing set. We respond within one business day.
         </p>
         <a
           href="mailto:trade@casacastellan.com"
           className="cc-btn"
-          style={{ background: C.terra, borderColor: C.terra, color: C.ink, fontWeight: 500 }}
+          style={{ background: C.terra, borderColor: C.terra, color: C.ink, fontWeight: 700 }}
         >
           trade@casacastellan.com
         </a>
