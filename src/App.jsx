@@ -109,6 +109,7 @@ const countries = [
       "https://i.pinimg.com/736x/14/90/b1/1490b1fb0bd41d1a0db1338fdad1d3c9.jpg",
       "https://i.pinimg.com/736x/0c/af/87/0caf878953f5285d3d12a3caf4a310e2.jpg",
       "https://i.pinimg.com/vwebp/1200x/90/a0/30/90a03099f95f24c1a51d4b5912a52a8d.webp",
+      "https://i.pinimg.com/vwebp/1200x/a1/73/8a/a1738a260ae07b44bf4c619f0e68c5b1.webp",
     ],
     regions: [
       { name: "Andalucía", cities: "Seville · Triana · Córdoba · Granada", mats: "Terracotta roof tiles · Architectural ceramics · Antique doors · Rejería ironwork" },
@@ -142,6 +143,9 @@ const countries = [
       "https://i.pinimg.com/vwebp/736x/b2/4b/8d/b24b8d85380197b5760832c095f735b5.webp",
       "https://i.pinimg.com/736x/b1/f8/42/b1f842adf6b710e79280f164d7c2e27e.jpg",
       "https://i.pinimg.com/736x/01/89/6b/01896b134905f993d3cf9e44c5a1a399.jpg",
+      "https://i.pinimg.com/736x/12/4c/a7/124ca749f2fef9190d1656f1fd0ee070.jpg",
+      "https://i.pinimg.com/vwebp/1200x/6c/5b/5a/6c5b5a30106269f8f93b139471762a02.webp",
+      "https://i.pinimg.com/vwebp/736x/53/50/f1/5350f1a186322f6c085fcb6bd31d1537.webp",
     ],
     regions: [
       { name: "Tuscany — Marble", cities: "Carrara · Pietrasanta", mats: "Marble · Commissioned carving · Carved architectural stone" },
@@ -158,6 +162,12 @@ const countries = [
   {
     country: "Portugal",
     img: IMAGES.mapPortugal,
+    materials: [
+      "https://i.pinimg.com/vwebp/1200x/2a/d6/93/2ad6932470ba1451f2a7585b28281821.webp",
+      "https://i.pinimg.com/vwebp/1200x/36/67/1f/36671f72fa52fac2a628d97169e67ea6.webp",
+      "https://i.pinimg.com/vwebp/1200x/fe/60/97/fe6097c93043aced652270439401aa23.webp",
+      "https://i.pinimg.com/vwebp/1200x/e1/5c/93/e15c93469e0a2aea9cfb4cd0bd392647.webp",
+    ],
     regions: [
       { name: "Alentejo", cities: "Estremoz · Borba · Vila Viçosa", mats: "White and pink marble · Flooring · Cladding · Carved stone" },
       { name: "Lisbon Region", cities: "Lisbon · Pêro Pinheiro · Montelavar", mats: "Azulejos · Lioz limestone · Carved stone · Architectural salvage" },
@@ -168,6 +178,12 @@ const countries = [
   {
     country: "Greece",
     img: IMAGES.mapGreece,
+    materials: [
+      "https://i.pinimg.com/736x/15/57/7d/15577df493e998774292686253a2dc67.jpg",
+      "https://i.pinimg.com/vwebp/736x/81/51/27/81512796df72be2eb7390cb599a0d389.webp",
+      "https://i.pinimg.com/1200x/0e/5f/8b/0e5f8b6d46767f512cec8396d817e20f.jpg",
+      "https://i.pinimg.com/vwebp/1200x/74/08/1e/74081ee90f0fbafe2772296ff80ba38a.webp",
+    ],
     regions: [
       { name: "Attica", cities: "Dionysos · Penteli", mats: "Pentelic marble — the historic stone of the Parthenon and the principal Acropolis monuments" },
       { name: "Northern Greece & Thassos", cities: "Drama · Kavala · Thassos", mats: "Volakas · Kavala · Thassos white marble" },
@@ -263,15 +279,15 @@ export default function CasaCastellanV2() {
         @media (max-width: 720px) { .cc-about { grid-template-columns: 1fr; } }
         .cc-about-section { position: relative; min-height: clamp(560px,72vw,760px); display: flex; align-items: flex-end; }
         .cc-doortodoor-section { position: relative; max-width: 1240px; margin: 0 auto; }
-        .cc-doortodoor-photo { width: 68%; height: auto; aspect-ratio: 3226 / 1630; object-fit: cover; display: block; background: ${C.ink}; }
+        .cc-doortodoor-photo { width: 84%; height: auto; aspect-ratio: 3226 / 1630; object-fit: cover; display: block; background: ${C.ink}; }
         .cc-doortodoor-card {
           position: absolute;
-          left: 56%;
+          left: 70%;
           top: 50%;
           transform: translateY(-50%);
           background: ${C.limestone};
-          padding: clamp(24px,3vw,36px) clamp(24px,3vw,40px);
-          width: 46%;
+          padding: clamp(18px,2.4vw,28px) clamp(18px,2.4vw,28px);
+          width: 34%;
           box-shadow: 0 8px 28px rgba(33,29,23,.12);
         }
         @media (max-width: 780px) {
@@ -537,7 +553,7 @@ export default function CasaCastellanV2() {
 
 
       {/* ── DOOR TO DOOR ─────────────────────── */}
-      <section style={{ borderTop: `1px solid ${C.line}`, padding: "clamp(56px,8vw,96px) clamp(20px,4vw,56px)" }}>
+      <section style={{ borderTop: `1px solid ${C.line}`, background: C.ink, padding: "clamp(56px,8vw,96px) clamp(20px,4vw,56px)" }}>
         <div className="cc-doortodoor-section">
           <img
             src="https://i.postimg.cc/Y0rw2r8g/Chat-GPT-Image-Jul-24-2026-01-48-27-AM-LE-upscale-prime-x2.jpg"
@@ -548,7 +564,7 @@ export default function CasaCastellanV2() {
             <p style={{ ...label, fontWeight: 700, fontSize: 13, letterSpacing: ".2em", color: C.terra, margin: "0 0 14px" }}>
               Door to Door
             </p>
-            <p style={{ fontFamily: "'Lora', serif", fontSize: 14, lineHeight: 1.6, color: C.ink, margin: 0, textAlign: "justify" }}>
+            <p style={{ fontFamily: "'Lora', serif", fontSize: 12.5, lineHeight: 1.55, color: C.ink, margin: 0, textAlign: "justify" }}>
               Wherever a piece originates, Casa Castellan coordinates its complete journey from the workshop,
               artist's studio or reclamation yard to the named project address. Every lot is inspected in person
               at source—from reclamation yards in Andalucía to marble ateliers on Tinos. Casa Castellan then
@@ -557,7 +573,7 @@ export default function CasaCastellanV2() {
               United States. Logistics are quoted separately from the material or artwork and presented clearly
               for approval. Casa Castellan remains your single point of contact throughout the shipment.
             </p>
-            <p style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic", fontWeight: 700, fontSize: 13.5, lineHeight: 1.5, color: C.terra, margin: "12px 0 0", textAlign: "justify" }}>
+            <p style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic", fontWeight: 700, fontSize: 12, lineHeight: 1.45, color: C.terra, margin: "10px 0 0", textAlign: "justify" }}>
               Site unloading, crane service, inside placement and installation are included only when expressly
               stated in the proposal.
             </p>
