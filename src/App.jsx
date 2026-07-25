@@ -279,15 +279,15 @@ export default function CasaCastellanV2() {
         @media (max-width: 720px) { .cc-about { grid-template-columns: 1fr; } }
         .cc-about-section { position: relative; min-height: clamp(560px,72vw,760px); display: flex; align-items: flex-end; }
         .cc-doortodoor-section { position: relative; max-width: 1240px; margin: 0 auto; }
-        .cc-doortodoor-photo { width: 84%; height: auto; aspect-ratio: 3226 / 1630; object-fit: cover; display: block; background: ${C.ink}; }
+        .cc-doortodoor-photo { width: 88%; height: auto; aspect-ratio: 3226 / 1630; object-fit: cover; display: block; background: ${C.ink}; }
         .cc-doortodoor-card {
           position: absolute;
-          left: 70%;
+          left: 72%;
           top: 50%;
           transform: translateY(-50%);
           background: ${C.limestone};
-          padding: clamp(18px,2.4vw,28px) clamp(18px,2.4vw,28px);
-          width: 34%;
+          padding: clamp(16px,2vw,24px);
+          width: 28%;
           box-shadow: 0 8px 28px rgba(33,29,23,.12);
         }
         @media (max-width: 780px) {
@@ -564,7 +564,7 @@ export default function CasaCastellanV2() {
             <p style={{ ...label, fontWeight: 700, fontSize: 13, letterSpacing: ".2em", color: C.terra, margin: "0 0 14px" }}>
               Door to Door
             </p>
-            <p style={{ fontFamily: "'Lora', serif", fontSize: 12.5, lineHeight: 1.55, color: C.ink, margin: 0, textAlign: "justify" }}>
+            <p style={{ fontFamily: "'Lora', serif", fontSize: 11.5, lineHeight: 1.5, color: C.ink, margin: 0, textAlign: "justify" }}>
               Wherever a piece originates, Casa Castellan coordinates its complete journey from the workshop,
               artist's studio or reclamation yard to the named project address. Every lot is inspected in person
               at source—from reclamation yards in Andalucía to marble ateliers on Tinos. Casa Castellan then
