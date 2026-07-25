@@ -245,8 +245,10 @@ export default function CasaCastellanV2() {
         .cc-countries { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
         @media (max-width: 900px) { .cc-countries { grid-template-columns: repeat(2, 1fr); } }
         @media (max-width: 560px) { .cc-countries { grid-template-columns: 1fr; } }
+        .cc-about { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(28px,5vw,64px); }
+        @media (max-width: 720px) { .cc-about { grid-template-columns: 1fr; } }
         .cc-about-section { position: relative; min-height: clamp(560px,72vw,760px); display: flex; align-items: flex-end; }
-        .cc-about-photo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
+        .cc-about-photo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; display: block; }
         .cc-about-card {
           position: relative;
           z-index: 1;
@@ -453,37 +455,36 @@ export default function CasaCastellanV2() {
       </header>
 
       {/* ── ABOUT ─────────────────────── */}
-      <section id="about" className="cc-about-section" style={{ borderTop: `1px solid ${C.line}` }}>
-        <img
-          src="https://i.postimg.cc/3wRcz1qN/Chat-GPT-Image-Jul-21-2026-04-36-53-PM.png"
-          alt="Casa Castellan sourced architectural interior"
-          className="cc-about-photo"
-        />
-        <div className="cc-about-card">
-          <h2 style={{ ...display, fontSize: "clamp(32px,4.6vw,50px)", lineHeight: 1.08, margin: "0 0 clamp(24px,3vw,32px)" }}>
-            About
-            <br />
-            Casa Castellan
-          </h2>
-          <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
-            <p style={{ fontFamily: "'Lora', serif", margin: 0, fontSize: 15.5, lineHeight: 1.75, color: C.ink, textAlign: "justify" }}>
+      <section id="about" style={{ background: C.limestone, borderTop: `1px solid ${C.line}`, padding: "clamp(56px,8vw,96px) clamp(20px,4vw,56px)" }}>
+        <h2 style={{ ...display, fontSize: "clamp(24px,3vw,32px)", margin: "0 0 clamp(32px,5vw,52px)" }}>About</h2>
+        <div className="cc-about">
+          <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", gap: 22 }}>
+            <p style={{ fontFamily: "'Lora', serif", margin: 0, fontSize: 16, lineHeight: 1.75, color: C.ink, textAlign: "justify" }}>
               Casa Castellan is an independent sourcing, verification and coordination house for European
               architectural materials, bespoke private commissions, fine art and selected estate pieces. We work
               directly with reclamation yards, stone suppliers, historic family workshops and artists across
               Spain, France, Italy, Portugal and Greece.
             </p>
-            <p style={{ fontFamily: "'Lora', serif", margin: 0, fontSize: 15.5, lineHeight: 1.75, color: C.soft, textAlign: "justify" }}>
+            <p style={{ fontFamily: "'Lora', serif", margin: 0, fontSize: 16, lineHeight: 1.75, color: C.soft, textAlign: "justify" }}>
               Each lot is inspected and verified in person at the source before purchase. Commissioned work is
               produced under our supervision at the workshop and reviewed against approved drawings, samples and
               agreed milestones.
             </p>
-            <p style={{ fontFamily: "'Lora', serif", margin: 0, fontSize: 15.5, lineHeight: 1.75, color: C.soft, textAlign: "justify" }}>
+            <p style={{ fontFamily: "'Lora', serif", margin: 0, fontSize: 16, lineHeight: 1.75, color: C.soft, textAlign: "justify" }}>
               Casa Castellan carries no speculative inventory. Every material, object or commission is selected
               for a specific project, ensuring that proposals reflect current availability, documented condition
               and genuine production capacity. Direct contact and relationship with the source allows each
               proposal to reflect current availability, condition, workshop capacity, lead time and the specific
               requirements of the project.
             </p>
+          </div>
+
+          <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
+            <img
+              src="https://i.postimg.cc/3wRcz1qN/Chat-GPT-Image-Jul-21-2026-04-36-53-PM.png"
+              alt="Casa Castellan sourced architectural interior"
+              style={{ width: "100%", height: "100%", objectFit: "contain", display: "block" }}
+            />
           </div>
         </div>
       </section>
@@ -595,7 +596,7 @@ export default function CasaCastellanV2() {
               <img
                 src={c.img}
                 alt={`${c.country} sourcing map`}
-                style={{ width: "100%", aspectRatio: "4 / 3", objectFit: "cover", display: "block", borderBottom: `1px solid ${C.line}` }}
+                style={{ width: "100%", aspectRatio: "4 / 3", objectFit: "contain", background: C.limestone, display: "block", borderBottom: `1px solid ${C.line}` }}
               />
               <div style={{ position: "relative", borderBottom: `1px solid ${C.line}` }}>
                 <MaterialsSlideshow images={c.materials} alt={`${c.country} materials`} dotColor={C.terra} />
@@ -618,17 +619,17 @@ export default function CasaCastellanV2() {
       </section>
 
       {/* ── DOOR TO DOOR ─────────────────────── */}
-      <section className="cc-about-section" style={{ borderTop: `1px solid ${C.line}` }}>
+      <section className="cc-about-section" style={{ borderTop: `1px solid ${C.line}`, background: C.ink }}>
         <img
           src="https://i.postimg.cc/HLq2tcbZ/Chat-GPT-Image-Jul-24-2026-01-48-27-AM.png"
           alt="Door to door delivery"
           className="cc-about-photo"
         />
-        <div className="cc-about-card">
+        <div className="cc-about-card" style={{ background: C.ink, width: "min(400px, calc(100% - 48px))" }}>
           <p style={{ ...label, fontWeight: 700, fontSize: 13, letterSpacing: ".2em", color: C.terra, margin: "0 0 20px" }}>
             Door to Door
           </p>
-          <p style={{ fontFamily: "'Lora', serif", fontSize: 15, lineHeight: 1.7, color: C.ink, margin: 0, textAlign: "justify" }}>
+          <p style={{ fontFamily: "'Lora', serif", fontSize: 15, lineHeight: 1.7, color: C.cream, margin: 0, textAlign: "justify" }}>
             Wherever a piece originates, Casa Castellan coordinates its complete journey from the workshop,
             artist's studio or reclamation yard to the named project address. Every lot is inspected in person
             at source—from reclamation yards in Andalucía to marble ateliers on Tinos. Casa Castellan then
@@ -671,7 +672,7 @@ export default function CasaCastellanV2() {
       </section>
 
       {/* ── CLOSING STATEMENT ─────────────────────── */}
-      <section className="cc-about-section" style={{ borderTop: `1px solid ${C.line}` }}>
+      <section className="cc-about-section" style={{ borderTop: `1px solid ${C.line}`, background: C.ink }}>
         <img
           src="https://i.postimg.cc/sXG3MbDJ/Chat-GPT-Image-Jul-25-2026-01-08-27-AM.png"
           alt="Casa Castellan delivery to project site"
