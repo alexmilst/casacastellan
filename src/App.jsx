@@ -248,8 +248,8 @@ export default function CasaCastellanV2() {
         .cc-about { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(28px,5vw,64px); }
         @media (max-width: 720px) { .cc-about { grid-template-columns: 1fr; } }
         .cc-about-section { position: relative; min-height: clamp(560px,72vw,760px); display: flex; align-items: flex-end; }
-        .cc-doortodoor-section { position: relative; min-height: clamp(340px,42vw,620px); }
-        .cc-doortodoor-photo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; background: ${C.ink}; display: block; }
+        .cc-doortodoor-section { position: relative; }
+        .cc-doortodoor-photo { width: 100%; height: auto; aspect-ratio: 3226 / 1630; object-fit: cover; display: block; background: ${C.ink}; }
         .cc-doortodoor-card {
           position: absolute;
           right: clamp(16px,3vw,40px);
@@ -494,7 +494,7 @@ export default function CasaCastellanV2() {
 
           <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
             <img
-              src="https://i.postimg.cc/Y0rw2r8g/Chat-GPT-Image-Jul-24-2026-01-48-27-AM-LE-upscale-prime-x2.jpg"
+              src="https://i.postimg.cc/SK9XCd4c/5e1b0bb652ee9784fb52713e69197549-LE-upscale-prime-x2.jpg"
               alt="Casa Castellan sourced architectural interior"
               style={{ width: "100%", height: "100%", objectFit: "contain", display: "block" }}
             />
