@@ -119,6 +119,15 @@ const countries = [
   {
     country: "France",
     img: IMAGES.mapFrance,
+    materials: [
+      "https://i.pinimg.com/736x/96/8e/e1/968ee175b87c7d7443f8f9da1c3d24c5.jpg",
+      "https://i.pinimg.com/vwebp/1200x/b7/79/c4/b779c45f2a2ce856e732ed6a5f2baca6.webp",
+      "https://i.pinimg.com/vwebp/736x/15/d9/14/15d914fd26db0b1695cc28b5b67e32b6.webp",
+      "https://i.pinimg.com/736x/cb/5b/87/cb5b870887cc5443ce177ba937db0981.jpg",
+      "https://i.pinimg.com/vwebp/1200x/93/63/91/936391cb361bcfbeb0b5e9d7b5facc1e.webp",
+      "https://i.pinimg.com/vwebp/1200x/a7/04/d1/a704d12743d0c7200967d01419e67842.webp",
+      "https://i.pinimg.com/vwebp/736x/07/f3/23/07f323c52db2e2e160b4d77b22efff91.webp",
+    ],
     regions: [
       { name: "Provence — Antiques", cities: "L'Isle-sur-la-Sorgue", mats: "Architectural antiques · Reclaimed stone · Fireplaces · Fountains" },
       { name: "Provence — Ceramics", cities: "Apt · Salernes", mats: "Faience · Pottery · Terracotta flooring · Tomettes" },
@@ -129,6 +138,11 @@ const countries = [
   {
     country: "Italy",
     img: IMAGES.mapItaly,
+    materials: [
+      "https://i.pinimg.com/vwebp/736x/b2/4b/8d/b24b8d85380197b5760832c095f735b5.webp",
+      "https://i.pinimg.com/736x/b1/f8/42/b1f842adf6b710e79280f164d7c2e27e.jpg",
+      "https://i.pinimg.com/736x/01/89/6b/01896b134905f993d3cf9e44c5a1a399.jpg",
+    ],
     regions: [
       { name: "Tuscany — Marble", cities: "Carrara · Pietrasanta", mats: "Marble · Commissioned carving · Carved architectural stone" },
       { name: "Tuscany — Terracotta", cities: "Impruneta · Rapolano Terme", mats: "Architectural terracotta · Tuscan travertine" },
@@ -248,18 +262,37 @@ export default function CasaCastellanV2() {
         .cc-about { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(28px,5vw,64px); }
         @media (max-width: 720px) { .cc-about { grid-template-columns: 1fr; } }
         .cc-about-section { position: relative; min-height: clamp(560px,72vw,760px); display: flex; align-items: flex-end; }
-        .cc-doortodoor-section { position: relative; }
-        .cc-doortodoor-photo { width: 100%; height: auto; aspect-ratio: 3226 / 1630; object-fit: cover; display: block; background: ${C.ink}; }
+        .cc-doortodoor-section { position: relative; max-width: 1240px; margin: 0 auto; }
+        .cc-doortodoor-photo { width: 68%; height: auto; aspect-ratio: 3226 / 1630; object-fit: cover; display: block; background: ${C.ink}; }
         .cc-doortodoor-card {
           position: absolute;
-          right: clamp(16px,3vw,40px);
-          bottom: clamp(16px,3vw,40px);
+          left: 56%;
+          top: 50%;
+          transform: translateY(-50%);
           background: ${C.limestone};
-          padding: clamp(20px,2.6vw,32px) clamp(24px,3vw,40px);
-          width: min(640px, calc(100% - 32px));
+          padding: clamp(24px,3vw,36px) clamp(24px,3vw,40px);
+          width: 46%;
+          box-shadow: 0 8px 28px rgba(33,29,23,.12);
+        }
+        @media (max-width: 780px) {
+          .cc-doortodoor-section { display: flex; flex-direction: column; }
+          .cc-doortodoor-photo { width: 100%; }
+          .cc-doortodoor-card { position: static; transform: none; width: 100%; margin-top: -40px; }
+        }
+        .cc-closing-section { position: relative; }
+        .cc-closing-photo { width: 100%; height: auto; aspect-ratio: 1 / 1; object-fit: cover; display: block; background: ${C.ink}; }
+        .cc-closing-card {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          background: ${C.limestone};
+          padding: clamp(28px,4vw,44px) clamp(28px,5vw,56px);
+          width: min(680px, calc(100% - 40px));
         }
         @media (max-width: 640px) {
-          .cc-doortodoor-card { position: static; width: 100%; }
+          .cc-closing-section { display: block; }
+          .cc-closing-card { position: static; transform: none; width: 100%; }
         }
         .cc-about-photo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; display: block; }
         .cc-about-card {
@@ -503,6 +536,36 @@ export default function CasaCastellanV2() {
       </section>
 
 
+      {/* ── DOOR TO DOOR ─────────────────────── */}
+      <section style={{ borderTop: `1px solid ${C.line}`, padding: "clamp(56px,8vw,96px) clamp(20px,4vw,56px)" }}>
+        <div className="cc-doortodoor-section">
+          <img
+            src="https://i.postimg.cc/Y0rw2r8g/Chat-GPT-Image-Jul-24-2026-01-48-27-AM-LE-upscale-prime-x2.jpg"
+            alt="Door to door delivery"
+            className="cc-doortodoor-photo"
+          />
+          <div className="cc-doortodoor-card">
+            <p style={{ ...label, fontWeight: 700, fontSize: 13, letterSpacing: ".2em", color: C.terra, margin: "0 0 14px" }}>
+              Door to Door
+            </p>
+            <p style={{ fontFamily: "'Lora', serif", fontSize: 14, lineHeight: 1.6, color: C.ink, margin: 0, textAlign: "justify" }}>
+              Wherever a piece originates, Casa Castellan coordinates its complete journey from the workshop,
+              artist's studio or reclamation yard to the named project address. Every lot is inspected in person
+              at source—from reclamation yards in Andalucía to marble ateliers on Tinos. Casa Castellan then
+              coordinates professional export packing, insured freight, customs brokerage and final-mile
+              delivery to project sites in Laguna Beach, Montecito, Palm Beach, Coral Gables and throughout the
+              United States. Logistics are quoted separately from the material or artwork and presented clearly
+              for approval. Casa Castellan remains your single point of contact throughout the shipment.
+            </p>
+            <p style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic", fontWeight: 700, fontSize: 13.5, lineHeight: 1.5, color: C.terra, margin: "12px 0 0", textAlign: "justify" }}>
+              Site unloading, crane service, inside placement and installation are included only when expressly
+              stated in the proposal.
+            </p>
+          </div>
+        </div>
+      </section>
+
+
       {/* ── COLLECTION ─────────────────────── */}
       <section id="collection" style={{ borderTop: `1px solid ${C.line}`, padding: "clamp(56px,8vw,96px) clamp(20px,4vw,56px)" }}>
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", flexWrap: "wrap", gap: 16, marginBottom: 20 }}>
@@ -631,33 +694,6 @@ export default function CasaCastellanV2() {
         </div>
       </section>
 
-      {/* ── DOOR TO DOOR ─────────────────────── */}
-      <section className="cc-doortodoor-section" style={{ borderTop: `1px solid ${C.line}` }}>
-        <img
-          src="https://i.postimg.cc/Y0rw2r8g/Chat-GPT-Image-Jul-24-2026-01-48-27-AM-LE-upscale-prime-x2.jpg"
-          alt="Door to door delivery"
-          className="cc-doortodoor-photo"
-        />
-        <div className="cc-doortodoor-card">
-          <p style={{ ...label, fontWeight: 700, fontSize: 13, letterSpacing: ".2em", color: C.terra, margin: "0 0 14px" }}>
-            Door to Door
-          </p>
-          <p style={{ fontFamily: "'Lora', serif", fontSize: 14, lineHeight: 1.65, color: C.ink, margin: 0, textAlign: "justify" }}>
-            Wherever a piece originates, Casa Castellan coordinates its complete journey from the workshop,
-            artist's studio or reclamation yard to the named project address. Every lot is inspected in person
-            at source—from reclamation yards in Andalucía to marble ateliers on Tinos. Casa Castellan then
-            coordinates professional export packing, insured freight, customs brokerage and final-mile
-            delivery to project sites in Laguna Beach, Montecito, Palm Beach, Coral Gables and throughout the
-            United States. Logistics are quoted separately from the material or artwork and presented clearly
-            for approval. Casa Castellan remains your single point of contact throughout the shipment.
-          </p>
-          <p style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic", fontWeight: 700, fontSize: 14, lineHeight: 1.55, color: C.terra, margin: "12px 0 0", textAlign: "justify" }}>
-            Site unloading, crane service, inside placement and installation are included only when expressly
-            stated in the proposal.
-          </p>
-        </div>
-      </section>
-
       {/* ── HOW IT WORKS ─────────────────────── */}
       <section id="process" style={{ background: C.ink, padding: "clamp(56px,8vw,96px) clamp(20px,4vw,56px)" }}>
         <h2 style={{ ...display, color: C.terra, fontSize: "clamp(24px,3vw,32px)", margin: "0 0 clamp(48px,7vw,80px)" }}>How It Works</h2>
@@ -685,13 +721,13 @@ export default function CasaCastellanV2() {
       </section>
 
       {/* ── CLOSING STATEMENT ─────────────────────── */}
-      <section className="cc-about-section" style={{ borderTop: `1px solid ${C.line}`, background: C.ink }}>
+      <section className="cc-closing-section" style={{ borderTop: `1px solid ${C.line}` }}>
         <img
           src="https://www.photo-pick.com/online/api/v1/albums/cf4d590b-0d9f-4d68-95d4-ff215d65c7fa.jpg"
           alt="Casa Castellan delivery to project site"
-          className="cc-about-photo"
+          className="cc-closing-photo"
         />
-        <div className="cc-about-card" style={{ textAlign: "center" }}>
+        <div className="cc-closing-card" style={{ textAlign: "center" }}>
           <div style={{ width: 56, height: 1, background: C.terra, margin: "0 auto 30px" }} />
           <p
             style={{
