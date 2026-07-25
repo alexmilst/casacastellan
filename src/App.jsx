@@ -232,7 +232,7 @@ export default function CasaCastellanV2() {
   return (
     <div style={{ background: C.cream, color: C.ink, fontFamily: "'Inter', sans-serif" }}>
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&family=Cormorant+Garamond:ital,wght@1,400;1,500&family=Lora:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&family=Cormorant+Garamond:ital,wght@1,400;1,500&family=Lora:ital,wght@0,400;0,500;1,400&family=Cinzel:wght@400;700&family=Inter:wght@400;500&display=swap');
         * { box-sizing: border-box; }
         html, body { margin: 0; padding: 0; }
         html { scroll-behavior: smooth; }
@@ -248,6 +248,19 @@ export default function CasaCastellanV2() {
         .cc-about { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(28px,5vw,64px); }
         @media (max-width: 720px) { .cc-about { grid-template-columns: 1fr; } }
         .cc-about-section { position: relative; min-height: clamp(560px,72vw,760px); display: flex; align-items: flex-end; }
+        .cc-doortodoor-section { position: relative; min-height: clamp(340px,42vw,620px); }
+        .cc-doortodoor-photo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; background: ${C.ink}; display: block; }
+        .cc-doortodoor-card {
+          position: absolute;
+          right: clamp(16px,3vw,40px);
+          bottom: clamp(16px,3vw,40px);
+          background: ${C.limestone};
+          padding: clamp(20px,2.6vw,32px) clamp(24px,3vw,40px);
+          width: min(640px, calc(100% - 32px));
+        }
+        @media (max-width: 640px) {
+          .cc-doortodoor-card { position: static; width: 100%; }
+        }
         .cc-about-photo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; display: block; }
         .cc-about-card {
           position: relative;
@@ -481,7 +494,7 @@ export default function CasaCastellanV2() {
 
           <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
             <img
-              src="https://i.postimg.cc/3wRcz1qN/Chat-GPT-Image-Jul-21-2026-04-36-53-PM.png"
+              src="https://i.postimg.cc/Y0rw2r8g/Chat-GPT-Image-Jul-24-2026-01-48-27-AM-LE-upscale-prime-x2.jpg"
               alt="Casa Castellan sourced architectural interior"
               style={{ width: "100%", height: "100%", objectFit: "contain", display: "block" }}
             />
@@ -619,17 +632,17 @@ export default function CasaCastellanV2() {
       </section>
 
       {/* ── DOOR TO DOOR ─────────────────────── */}
-      <section className="cc-about-section" style={{ borderTop: `1px solid ${C.line}`, background: C.ink }}>
+      <section className="cc-doortodoor-section" style={{ borderTop: `1px solid ${C.line}` }}>
         <img
-          src="https://i.postimg.cc/HLq2tcbZ/Chat-GPT-Image-Jul-24-2026-01-48-27-AM.png"
+          src="https://i.postimg.cc/Y0rw2r8g/Chat-GPT-Image-Jul-24-2026-01-48-27-AM-LE-upscale-prime-x2.jpg"
           alt="Door to door delivery"
-          className="cc-about-photo"
+          className="cc-doortodoor-photo"
         />
-        <div className="cc-about-card" style={{ background: C.ink, width: "min(400px, calc(100% - 48px))" }}>
-          <p style={{ ...label, fontWeight: 700, fontSize: 13, letterSpacing: ".2em", color: C.terra, margin: "0 0 20px" }}>
+        <div className="cc-doortodoor-card">
+          <p style={{ ...label, fontWeight: 700, fontSize: 13, letterSpacing: ".2em", color: C.terra, margin: "0 0 14px" }}>
             Door to Door
           </p>
-          <p style={{ fontFamily: "'Lora', serif", fontSize: 15, lineHeight: 1.7, color: C.cream, margin: 0, textAlign: "justify" }}>
+          <p style={{ fontFamily: "'Lora', serif", fontSize: 14, lineHeight: 1.65, color: C.ink, margin: 0, textAlign: "justify" }}>
             Wherever a piece originates, Casa Castellan coordinates its complete journey from the workshop,
             artist's studio or reclamation yard to the named project address. Every lot is inspected in person
             at source—from reclamation yards in Andalucía to marble ateliers on Tinos. Casa Castellan then
@@ -638,7 +651,7 @@ export default function CasaCastellanV2() {
             United States. Logistics are quoted separately from the material or artwork and presented clearly
             for approval. Casa Castellan remains your single point of contact throughout the shipment.
           </p>
-          <p style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic", fontWeight: 700, fontSize: 15.5, lineHeight: 1.6, color: C.terra, margin: "16px 0 0", textAlign: "justify" }}>
+          <p style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic", fontWeight: 700, fontSize: 14, lineHeight: 1.55, color: C.terra, margin: "12px 0 0", textAlign: "justify" }}>
             Site unloading, crane service, inside placement and installation are included only when expressly
             stated in the proposal.
           </p>
@@ -674,7 +687,7 @@ export default function CasaCastellanV2() {
       {/* ── CLOSING STATEMENT ─────────────────────── */}
       <section className="cc-about-section" style={{ borderTop: `1px solid ${C.line}`, background: C.ink }}>
         <img
-          src="https://i.postimg.cc/sXG3MbDJ/Chat-GPT-Image-Jul-25-2026-01-08-27-AM.png"
+          src="https://www.photo-pick.com/online/api/v1/albums/cf4d590b-0d9f-4d68-95d4-ff215d65c7fa.jpg"
           alt="Casa Castellan delivery to project site"
           className="cc-about-photo"
         />
@@ -683,13 +696,13 @@ export default function CasaCastellanV2() {
           <p
             style={{
               margin: "0 auto",
-              fontFamily: "'Cormorant Garamond', serif",
-              fontStyle: "italic",
-              fontWeight: 500,
-              fontSize: "clamp(22px,2.6vw,28px)",
+              fontFamily: "'Cinzel', serif",
+              fontWeight: 400,
+              textTransform: "uppercase",
+              fontSize: "clamp(17px,2vw,22px)",
               lineHeight: 1.65,
               color: C.ink,
-              letterSpacing: ".01em",
+              letterSpacing: ".03em",
             }}
           >
             Every lot is verified in person at the source before purchase — pricing typically lands 25–40% below
