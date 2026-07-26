@@ -650,7 +650,7 @@ export default function CasaCastellanV2() {
             United States. Logistics are quoted separately from the material or artwork and presented clearly
             for approval. Casa Castellan remains your single point of contact throughout the shipment.
           </p>
-          <p style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic", fontWeight: 700, fontSize: 16.5, lineHeight: 1.55, color: C.terra, margin: "16px 0 0", maxWidth: 760, textAlign: "justify" }}>
+          <p style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic", fontWeight: 700, fontSize: 18.5, lineHeight: 1.55, color: C.terra, margin: "16px 0 0", maxWidth: 760, textAlign: "justify" }}>
             Site unloading, crane service, inside placement and installation are included only when expressly
             stated in the proposal.
           </p>
