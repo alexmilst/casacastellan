@@ -885,18 +885,18 @@ export default function CasaCastellanV2() {
             maxWidth: 1240,
             margin: "0 auto",
             display: "grid",
-            gridTemplateColumns: "1.7fr 1fr 1fr",
+            gridTemplateColumns: "2.2fr 1fr 1fr",
             gap: 40,
             padding: "clamp(40px,6vw,64px) clamp(20px,4vw,56px) 28px",
             borderBottom: `1px solid ${C.line}`,
           }}
         >
           <div style={{ display: "flex", alignItems: "flex-start", gap: 4 }}>
-            <img src={LOGO} alt="Casa Castellan crest" style={{ width: 192, height: 192, objectFit: "contain", flexShrink: 0, display: "block", marginTop: -24, marginLeft: -20 }} />
-            <div>
+            <img src={LOGO} alt="Casa Castellan crest" style={{ width: 192, height: 192, objectFit: "contain", flexShrink: 0, display: "block", marginTop: -48, marginLeft: -48 }} />
+            <div style={{ minWidth: 0 }}>
               <div style={{ ...display, fontSize: 20, whiteSpace: "nowrap" }}>Casa Castellan LLC</div>
-              <div style={{ ...label, fontWeight: 700, fontSize: 10.5, color: C.soft, marginTop: 6 }}>European Art &amp; Architectural Heritage</div>
-              <div style={{ marginTop: 18, fontSize: 16, fontStyle: "italic", letterSpacing: ".03em", color: C.soft, lineHeight: 1.9 }}>
+              <div style={{ ...label, fontWeight: 700, fontSize: 10.5, color: C.soft, marginTop: 6, whiteSpace: "nowrap" }}>European Art &amp; Architectural Heritage</div>
+              <div style={{ marginTop: 18, fontSize: 16, fontStyle: "italic", letterSpacing: ".03em", color: C.soft, lineHeight: 1.9, whiteSpace: "nowrap" }}>
                 <a href="mailto:trade@casacastellan.com" style={{ color: C.soft, textDecoration: "underline" }}>trade@casacastellan.com</a>
                 <br />
                 <a href="https://wa.me/19497629937" target="_blank" rel="noopener noreferrer" style={{ color: C.soft, textDecoration: "underline" }}>WhatsApp +1 (949) 762-9937</a>
