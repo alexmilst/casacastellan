@@ -891,14 +891,16 @@ export default function CasaCastellanV2() {
             borderBottom: `1px solid ${C.line}`,
           }}
         >
-          <div>
-            <img src={LOGO} alt="Casa Castellan crest" style={{ width: 64, height: 64, objectFit: "contain", marginBottom: 16, display: "block" }} />
-            <div style={{ ...display, fontSize: 20 }}>Casa Castellan LLC</div>
-            <div style={{ ...label, fontWeight: 700, fontSize: 10.5, color: C.soft, marginTop: 6 }}>European Art &amp; Architectural Heritage</div>
-            <div style={{ marginTop: 18, fontSize: 16, fontStyle: "italic", letterSpacing: ".03em", color: C.soft, lineHeight: 1.9 }}>
-              <a href="mailto:trade@casacastellan.com" style={{ color: C.soft, textDecoration: "none" }}>trade@casacastellan.com</a>
-              <br />
-              <a href="tel:+19497629937" style={{ color: C.soft, textDecoration: "none" }}>+1 (949) 762-9937</a>
+          <div style={{ display: "flex", alignItems: "flex-start", gap: 20 }}>
+            <img src={LOGO} alt="Casa Castellan crest" style={{ width: 96, height: 96, objectFit: "contain", flexShrink: 0, display: "block" }} />
+            <div>
+              <div style={{ ...display, fontSize: 20 }}>Casa Castellan LLC</div>
+              <div style={{ ...label, fontWeight: 700, fontSize: 10.5, color: C.soft, marginTop: 6 }}>European Art &amp; Architectural Heritage</div>
+              <div style={{ marginTop: 18, fontSize: 16, fontStyle: "italic", letterSpacing: ".03em", color: C.soft, lineHeight: 1.9 }}>
+                <a href="mailto:trade@casacastellan.com" style={{ color: C.soft, textDecoration: "underline" }}>trade@casacastellan.com</a>
+                <br />
+                <a href="https://wa.me/19497629937" target="_blank" rel="noopener noreferrer" style={{ color: C.soft, textDecoration: "underline" }}>WhatsApp +1 (949) 762-9937</a>
+              </div>
             </div>
           </div>
 
