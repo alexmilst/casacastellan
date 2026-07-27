@@ -892,7 +892,7 @@ export default function CasaCastellanV2() {
           }}
         >
           <div style={{ display: "flex", alignItems: "flex-start", gap: 20 }}>
-            <img src={LOGO} alt="Casa Castellan crest" style={{ width: 96, height: 96, objectFit: "contain", flexShrink: 0, display: "block" }} />
+            <img src={LOGO} alt="Casa Castellan crest" style={{ width: 192, height: 192, objectFit: "contain", flexShrink: 0, display: "block" }} />
             <div>
               <div style={{ ...display, fontSize: 20 }}>Casa Castellan LLC</div>
               <div style={{ ...label, fontWeight: 700, fontSize: 10.5, color: C.soft, marginTop: 6 }}>European Art &amp; Architectural Heritage</div>
