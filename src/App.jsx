@@ -639,12 +639,12 @@ export default function CasaCastellanV2() {
 
 
       {/* ── DOOR TO DOOR ─────────────────────── */}
-      <section style={{ borderTop: `1px solid ${C.line}`, background: C.ink, padding: "clamp(56px,8vw,96px) clamp(20px,4vw,56px)" }}>
+      <section style={{ borderTop: `1px solid ${C.line}`, background: C.cream, padding: "clamp(56px,8vw,96px) clamp(20px,4vw,56px)" }}>
         <div style={{ maxWidth: 1240, margin: "0 auto", textAlign: "center" }}>
           <p style={{ ...label, fontWeight: 700, fontSize: 15, letterSpacing: ".2em", color: C.terra, margin: "0 0 18px" }}>
             Door to Door
           </p>
-          <p style={{ fontFamily: "'Lora', serif", fontSize: 18, lineHeight: 1.75, color: C.limestone, margin: "0 auto", maxWidth: 760, textAlign: "justify" }}>
+          <p style={{ fontFamily: "'Lora', serif", fontSize: 18, lineHeight: 1.75, color: C.ink, margin: "0 auto", maxWidth: 760, textAlign: "justify" }}>
             Wherever a piece originates, Casa Castellan coordinates its complete journey from the workshop,
             artist's studio or reclamation yard to the named project address. Every lot is inspected in person
             at source—from reclamation yards in Andalucía to marble ateliers on Tinos. Casa Castellan then
@@ -662,7 +662,7 @@ export default function CasaCastellanV2() {
 
       <section style={{ borderTop: `1px solid ${C.line}` }}>
         <img
-          src="https://i.postimg.cc/Y0rw2r8g/Chat-GPT-Image-Jul-24-2026-01-48-27-AM-LE-upscale-prime-x2.jpg"
+          src="https://i.postimg.cc/9Xsb2Dn3/Chat-GPT-Image-Jul-25-2026-01-08-27-AM-LE-upscale-prime-x2.jpg"
           alt="Door to door delivery"
           style={{ width: "100%", height: "auto", objectFit: "contain", background: C.ink, display: "block" }}
         />
