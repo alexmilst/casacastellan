@@ -267,6 +267,9 @@ export default function CasaCastellanV2() {
         * { box-sizing: border-box; }
         html, body { margin: 0; padding: 0; }
         .cc-hamburger { display: none; }
+        @media (min-width: 881px) {
+          .cc-hero-cta { display: none !important; }
+        }
         @media (max-width: 880px) {
           .cc-nav-links { display: none !important; }
           .cc-nav-cta { display: none !important; }
@@ -276,7 +279,7 @@ export default function CasaCastellanV2() {
           .cc-footer-grid { grid-template-columns: 1fr !important; }
         }
         html { scroll-behavior: smooth; }
-        .cc-grid { display: grid; grid-template-columns: 1.3fr 0.9fr; gap: clamp(32px,6vw,64px); align-items: stretch; }
+        .cc-grid { display: grid; grid-template-columns: 1.05fr 1.15fr; gap: clamp(32px,6vw,64px); align-items: stretch; }
         @media (max-width: 880px) {
           .cc-grid { grid-template-columns: 1fr; }
           .cc-grid > *:last-child { order: -1; justify-self: center; }
@@ -381,7 +384,7 @@ export default function CasaCastellanV2() {
             letterSpacing: "0.04em",
             background: C.ink,
             borderColor: C.ink,
-            color: C.terra,
+            color: C.cream,
           }}
         >
           Project Inquiry
@@ -452,7 +455,7 @@ export default function CasaCastellanV2() {
                 letterSpacing: "0.04em",
                 background: C.ink,
                 borderColor: C.ink,
-                color: C.terra,
+                color: C.cream,
               }}
             >
               Project Inquiry
@@ -504,7 +507,7 @@ export default function CasaCastellanV2() {
 
             <a
               href="#contact"
-              className="cc-btn cc-btn-solid"
+              className="cc-btn cc-btn-solid cc-hero-cta"
               style={{
                 marginTop: 32,
                 width: "fit-content",
@@ -513,7 +516,7 @@ export default function CasaCastellanV2() {
                 letterSpacing: "0.04em",
                 background: C.ink,
                 borderColor: C.ink,
-                color: C.terra,
+                color: C.cream,
               }}
             >
               Project Inquiry
@@ -521,11 +524,11 @@ export default function CasaCastellanV2() {
           </div>
 
           <div style={{ display: "flex", flexDirection: "column", height: "100%" }}>
-            <div style={{ height: 34 }} aria-hidden="true" />
+            <div style={{ height: 12 }} aria-hidden="true" />
             <div style={{ flex: 1, display: "flex", alignItems: "stretch", justifyContent: "center" }}>
-              <img src={LOGO} alt="Casa Castellan" style={{ width: "100%", height: "100%", objectFit: "contain" }} />
+              <img src={LOGO} alt="Casa Castellan" className="cc-hero-logo" style={{ width: "100%", height: "100%", objectFit: "contain" }} />
             </div>
-            <div style={{ height: 69 }} aria-hidden="true" />
+            <div style={{ height: 20 }} aria-hidden="true" />
           </div>
         </div>
 
