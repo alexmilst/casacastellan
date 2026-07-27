@@ -526,9 +526,9 @@ export default function CasaCastellanV2() {
           </div>
 
           <div style={{ display: "flex", flexDirection: "column", height: "100%" }}>
-            <div style={{ height: 34 }} aria-hidden="true" />
-            <div style={{ flex: 1, display: "flex", alignItems: "flex-start", justifyContent: "center" }}>
-              <img src={LOGO} alt="Casa Castellan" className="cc-hero-logo" style={{ width: "100%", height: "100%", objectFit: "contain", objectPosition: "top" }} />
+            <div style={{ height: 10 }} aria-hidden="true" />
+            <div style={{ flex: 1, display: "flex", alignItems: "flex-start", justifyContent: "flex-end" }}>
+              <img src={LOGO} alt="Casa Castellan" className="cc-hero-logo" style={{ width: "100%", height: "100%", objectFit: "contain", objectPosition: "top right" }} />
             </div>
             <div style={{ height: 20 }} aria-hidden="true" />
           </div>
