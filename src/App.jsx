@@ -276,9 +276,19 @@ export default function CasaCastellanV2() {
           .cc-nav-cta { display: none !important; }
           .cc-hamburger { display: block; }
         }
-        @media (max-width: 720px) {
-          .cc-footer-grid { grid-template-columns: 1fr !important; }
+        @media (max-width: 880px) {
+          .cc-hero-logo-wrap { justify-content: center !important; }
+          .cc-hero-logo { object-position: top center !important; transform: none !important; }
         }
+        @media (max-width: 720px) {
+          .cc-body-p { font-size: 15.5px !important; line-height: 1.75 !important; }
+          .cc-qualifier-p { font-size: 16px !important; }
+          .cc-footer-grid { grid-template-columns: 1fr !important; }
+          .cc-footer-brand { flex-direction: column !important; align-items: center !important; text-align: center; gap: 0 !important; }
+          .cc-footer-logo { width: 120px !important; height: 120px !important; margin: 0 0 8px 0 !important; }
+          .cc-footer-nowrap { white-space: normal !important; overflow-wrap: anywhere; }
+        }
+        html, body { overflow-x: hidden; max-width: 100%; }
         html { scroll-behavior: smooth; }
         .cc-grid { display: grid; grid-template-columns: 1.05fr 1.15fr; gap: clamp(32px,6vw,64px); align-items: stretch; }
         @media (max-width: 880px) {
@@ -347,7 +357,7 @@ export default function CasaCastellanV2() {
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
-          padding: "18px clamp(20px,4vw,56px)",
+          padding: "18px clamp(24px,4vw,56px)",
           background: "#F2EBD9",
         }}
       >
@@ -414,7 +424,7 @@ export default function CasaCastellanV2() {
             flexDirection: "column",
           }}
         >
-          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "18px clamp(20px,4vw,56px)" }}>
+          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "18px clamp(24px,4vw,56px)" }}>
             <div style={{ ...display, color: C.ink, fontSize: 20, whiteSpace: "nowrap" }}>Casa Castellan</div>
             <button
               onClick={() => setMenuOpen(false)}
@@ -501,7 +511,7 @@ export default function CasaCastellanV2() {
 
             <div aria-hidden="true" style={{ width: 64, height: 2, background: C.terra, margin: "30px 0" }} />
 
-            <p style={{ fontFamily: "'Lora', serif", fontSize: "clamp(17px,1.6vw,19px)", lineHeight: 1.78, color: C.soft, maxWidth: 520, margin: 0, textAlign: "justify" }}>
+            <p className="cc-body-p" style={{ fontFamily: "'Lora', serif", fontSize: "clamp(17px,1.6vw,19px)", lineHeight: 1.78, color: C.soft, maxWidth: 520, margin: 0, textAlign: "justify" }}>
               Casa Castellan works with reclamation houses, workshops and artists across Spain, Italy, France,
               Portugal and Greece, supplying architects, builders and interior designers throughout the United
               States.
@@ -527,7 +537,7 @@ export default function CasaCastellanV2() {
 
           <div style={{ display: "flex", flexDirection: "column", height: "100%" }}>
             <div style={{ height: 10 }} aria-hidden="true" />
-            <div style={{ flex: 1, display: "flex", alignItems: "flex-start", justifyContent: "flex-end" }}>
+            <div className="cc-hero-logo-wrap" style={{ flex: 1, display: "flex", alignItems: "flex-start", justifyContent: "flex-end" }}>
               <img
                 src={LOGO}
                 alt="Casa Castellan"
@@ -610,22 +620,22 @@ export default function CasaCastellanV2() {
       </header>
 
       {/* ── ABOUT ─────────────────────── */}
-      <section id="about" style={{ background: "#F2EBD9", borderTop: `1px solid ${C.line}`, padding: "clamp(56px,8vw,96px) clamp(20px,4vw,56px)" }}>
+      <section id="about" style={{ background: "#F2EBD9", borderTop: `1px solid ${C.line}`, padding: "clamp(56px,8vw,96px) clamp(24px,4vw,56px)" }}>
         <h2 style={{ ...display, fontSize: "clamp(24px,3vw,32px)", margin: "0 0 clamp(32px,5vw,52px)" }}>About</h2>
         <div className="cc-about">
           <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", gap: 22 }}>
-            <p style={{ fontFamily: "'Lora', serif", margin: 0, fontSize: 16, lineHeight: 1.75, color: C.ink, textAlign: "justify" }}>
+            <p className="cc-body-p" style={{ fontFamily: "'Lora', serif", margin: 0, fontSize: 16, lineHeight: 1.75, color: C.ink, textAlign: "justify" }}>
               Casa Castellan is an independent sourcing, verification and coordination house for European
               architectural materials, bespoke private commissions, fine art and selected estate pieces. We work
               directly with reclamation yards, stone suppliers, historic family workshops and artists across
               Spain, France, Italy, Portugal and Greece.
             </p>
-            <p style={{ fontFamily: "'Lora', serif", margin: 0, fontSize: 16, lineHeight: 1.75, color: C.soft, textAlign: "justify" }}>
+            <p className="cc-body-p" style={{ fontFamily: "'Lora', serif", margin: 0, fontSize: 16, lineHeight: 1.75, color: C.soft, textAlign: "justify" }}>
               Each lot is inspected and verified in person at the source before purchase. Commissioned work is
               produced under our supervision at the workshop and reviewed against approved drawings, samples and
               agreed milestones.
             </p>
-            <p style={{ fontFamily: "'Lora', serif", margin: 0, fontSize: 16, lineHeight: 1.75, color: C.soft, textAlign: "justify" }}>
+            <p className="cc-body-p" style={{ fontFamily: "'Lora', serif", margin: 0, fontSize: 16, lineHeight: 1.75, color: C.soft, textAlign: "justify" }}>
               Casa Castellan carries no speculative inventory. Every material, object or commission is selected
               for a specific project, ensuring that proposals reflect current availability, documented condition
               and genuine production capacity. Direct contact and relationship with the source allows each
@@ -646,12 +656,12 @@ export default function CasaCastellanV2() {
 
 
       {/* ── DOOR TO DOOR ─────────────────────── */}
-      <section style={{ borderTop: `1px solid ${C.line}`, background: C.cream, padding: "clamp(56px,8vw,96px) clamp(20px,4vw,56px)" }}>
+      <section style={{ borderTop: `1px solid ${C.line}`, background: C.cream, padding: "clamp(56px,8vw,96px) clamp(24px,4vw,56px)" }}>
         <div style={{ maxWidth: 1240, margin: "0 auto", textAlign: "center" }}>
           <p style={{ ...label, fontWeight: 700, fontSize: 15, letterSpacing: ".2em", color: C.terra, margin: "0 0 18px" }}>
             Door to Door
           </p>
-          <p style={{ fontFamily: "'Lora', serif", fontSize: 18, lineHeight: 1.75, color: C.ink, margin: "0 auto", maxWidth: 760, textAlign: "justify" }}>
+          <p className="cc-body-p" style={{ fontFamily: "'Lora', serif", fontSize: 18, lineHeight: 1.75, color: C.ink, margin: "0 auto", maxWidth: 760, textAlign: "justify" }}>
             Wherever a piece originates, Casa Castellan coordinates its complete journey from the workshop,
             artist's studio or reclamation yard to the named project address. Every lot is inspected in person
             at source—from reclamation yards in Andalucía to marble ateliers on Tinos. Casa Castellan then
@@ -660,7 +670,7 @@ export default function CasaCastellanV2() {
             United States. Logistics are quoted separately from the material or artwork and presented clearly
             for approval. Casa Castellan remains your single point of contact throughout the shipment.
           </p>
-          <p style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic", fontWeight: 700, fontSize: 18.5, lineHeight: 1.55, color: C.terra, margin: "16px auto 0", maxWidth: 760, textAlign: "justify" }}>
+          <p className="cc-qualifier-p" style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic", fontWeight: 700, fontSize: 18.5, lineHeight: 1.55, color: C.terra, margin: "16px auto 0", maxWidth: 760, textAlign: "justify" }}>
             Site unloading, crane service, inside placement and installation are included only when expressly
             stated in the proposal.
           </p>
@@ -677,7 +687,7 @@ export default function CasaCastellanV2() {
 
 
       {/* ── COLLECTION ─────────────────────── */}
-      <section id="collection" style={{ borderTop: `1px solid ${C.line}`, padding: "clamp(56px,8vw,96px) clamp(20px,4vw,56px)" }}>
+      <section id="collection" style={{ borderTop: `1px solid ${C.line}`, padding: "clamp(56px,8vw,96px) clamp(24px,4vw,56px)" }}>
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", flexWrap: "wrap", gap: 16, marginBottom: 20 }}>
           <h2 style={{ ...display, fontSize: "clamp(24px,3vw,32px)", margin: 0 }}>What We Source &amp; Commission</h2>
           <span style={{ ...label, fontSize: 11 }}>01 – 04</span>
@@ -716,7 +726,7 @@ export default function CasaCastellanV2() {
       </section>
 
       {/* ── SOURCING REGISTER ─────────────────────── */}
-      <section id="sourcing" style={{ background: "#F2EBD9", borderTop: `1px solid ${C.line}`, borderBottom: `1px solid ${C.line}`, padding: "clamp(56px,8vw,96px) clamp(20px,4vw,56px)" }}>
+      <section id="sourcing" style={{ background: "#F2EBD9", borderTop: `1px solid ${C.line}`, borderBottom: `1px solid ${C.line}`, padding: "clamp(56px,8vw,96px) clamp(24px,4vw,56px)" }}>
         <h2 style={{ ...display, fontSize: "clamp(24px,3vw,32px)", margin: "0 0 20px" }}>Origins &amp; Materials</h2>
         <p
           style={{
@@ -805,7 +815,7 @@ export default function CasaCastellanV2() {
       </section>
 
       {/* ── HOW IT WORKS ─────────────────────── */}
-      <section id="process" style={{ background: C.ink, padding: "clamp(56px,8vw,96px) clamp(20px,4vw,56px)" }}>
+      <section id="process" style={{ background: C.ink, padding: "clamp(56px,8vw,96px) clamp(24px,4vw,56px)" }}>
         <h2 style={{ ...display, color: C.terra, fontSize: "clamp(24px,3vw,32px)", margin: "0 0 clamp(48px,7vw,80px)" }}>How It Works</h2>
 
         <div style={{ display: "flex", flexDirection: "column", gap: "clamp(48px,7vw,88px)" }}>
@@ -859,7 +869,7 @@ export default function CasaCastellanV2() {
       </section>
 
       {/* ── CONTACT ─────────────────────── */}
-      <section id="contact" style={{ background: C.ink, color: C.cream, padding: "clamp(64px,9vw,112px) clamp(20px,4vw,56px)" }}>
+      <section id="contact" style={{ background: C.ink, color: C.cream, padding: "clamp(64px,9vw,112px) clamp(24px,4vw,56px)" }}>
         <h2 style={{ ...display, color: C.travertine, fontSize: "clamp(26px,3.4vw,36px)", lineHeight: 1.4, maxWidth: 620, margin: "0 0 20px" }}>
           Pricing a project or sourcing a particular material?
         </h2>
@@ -887,16 +897,16 @@ export default function CasaCastellanV2() {
             display: "grid",
             gridTemplateColumns: "2.2fr 1fr 1fr",
             gap: 40,
-            padding: "clamp(40px,6vw,64px) clamp(20px,4vw,56px) 28px",
+            padding: "clamp(40px,6vw,64px) clamp(24px,4vw,56px) 28px",
             borderBottom: `1px solid ${C.line}`,
           }}
         >
-          <div style={{ display: "flex", alignItems: "flex-start", gap: 4 }}>
-            <img src={LOGO} alt="Casa Castellan crest" style={{ width: 192, height: 192, objectFit: "contain", flexShrink: 0, display: "block", marginTop: -48, marginLeft: -48 }} />
+          <div className="cc-footer-brand" style={{ display: "flex", alignItems: "flex-start", gap: 4 }}>
+            <img className="cc-footer-logo" src={LOGO} alt="Casa Castellan crest" style={{ width: 192, height: 192, objectFit: "contain", flexShrink: 0, display: "block", marginTop: -48, marginLeft: -48 }} />
             <div style={{ minWidth: 0 }}>
-              <div style={{ ...display, fontSize: 20, whiteSpace: "nowrap" }}>Casa Castellan LLC</div>
-              <div style={{ ...label, fontWeight: 700, fontSize: 10.5, color: C.soft, marginTop: 6, whiteSpace: "nowrap" }}>European Art &amp; Architectural Heritage</div>
-              <div style={{ marginTop: 18, fontSize: 16, fontStyle: "italic", letterSpacing: ".03em", color: C.soft, lineHeight: 1.9, whiteSpace: "nowrap" }}>
+              <div className="cc-footer-nowrap" style={{ ...display, fontSize: 20, whiteSpace: "nowrap" }}>Casa Castellan LLC</div>
+              <div className="cc-footer-nowrap" style={{ ...label, fontWeight: 700, fontSize: 10.5, color: C.soft, marginTop: 6, whiteSpace: "nowrap" }}>European Art &amp; Architectural Heritage</div>
+              <div className="cc-footer-nowrap" style={{ marginTop: 18, fontSize: 16, fontStyle: "italic", letterSpacing: ".03em", color: C.soft, lineHeight: 1.9, whiteSpace: "nowrap" }}>
                 <a href="mailto:trade@casacastellan.com" style={{ color: C.soft, textDecoration: "underline" }}>trade@casacastellan.com</a>
                 <br />
                 <a href="https://wa.me/19497629937" target="_blank" rel="noopener noreferrer" style={{ color: C.soft, textDecoration: "underline" }}>WhatsApp +1 (949) 762-9937</a>
@@ -954,7 +964,7 @@ export default function CasaCastellanV2() {
             justifyContent: "space-between",
             flexWrap: "wrap",
             gap: 16,
-            padding: "20px clamp(20px,4vw,56px) clamp(24px,4vw,32px)",
+            padding: "20px clamp(24px,4vw,56px) clamp(24px,4vw,32px)",
             fontSize: 11.5,
             color: C.soft,
           }}
